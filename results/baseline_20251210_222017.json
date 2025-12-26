@@ -1,0 +1,61 @@
+{
+  "system_name": "baseline",
+  "timestamp": "2025-12-10T22:19:41.158618",
+  "questions": [
+    {
+      "question_id": "easy_01",
+      "question": "What does RAG stand for?",
+      "expected": "Retrieval-Augmented Generation",
+      "actual": "RAG is an abbreviation that stands for Retrieval-Augmentation-Generation.",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 3,
+      "top_source_score": 0.595643321950235,
+      "rewritten_query": null
+    },
+    {
+      "question_id": "easy_02",
+      "question": "What is the main purpose of RAG systems?",
+      "expected": "To augment LLM responses with retrieved external knowledge to improve accuracy and reduce hallucinations",
+      "actual": "RAG systems aim to provide better information for large language models (LLMs) to answer more complex and knowledge-intensive tasks during the inference stage.",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 3,
+      "top_source_score": 0.5416037797815675,
+      "rewritten_query": null
+    },
+    {
+      "question_id": "easy_03",
+      "question": "What are the main components of a RAG system?",
+      "expected": "A retriever (to find relevant documents) and a generator (LLM to produce answers using retrieved context)",
+      "actual": "A Retrieval-Augmentation Generator (RAG) system typically consists of three core stages: \n\n1. \"Retrieval\": \nThis stage involves searching for relevant information within a vast amount of data to retrieve the most pertinent pieces.\n\n2. \"Generation\":\nIn this stage, the retrieved information is then used as input to generate new content or responses using various generative models.\n\n3. \"Augmentation\":\nThe final step involves fine-tuning and refining the generated content through augmentation techniques to enhance its quality and coherence.",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 3,
+      "top_source_score": 0.5263202420094666,
+      "rewritten_query": null
+    },
+    {
+      "question_id": "semantic_01",
+      "question": "How does Self-RAG differ from standard RAG?",
+      "expected": "Self-RAG adds reflection tokens that let the model decide when to retrieve, what to retrieve, and whether retrieved content is useful, making it more autonomous than standard RAG",
+      "actual": "Self-RAG requires instruction-tuning using human or LLM annotated data to learn special critic tokens, whereas standard RAG does not have this requirement. This difference is mainly due to Self-RAG needing to output these tokens as needed, a capability that is not learned in common LLMs.",
+      "difficulty": "medium",
+      "failure_mode": "semantic_confusion",
+      "sources_retrieved": 3,
+      "top_source_score": 0.5483538587940322,
+      "rewritten_query": null
+    },
+    {
+      "question_id": "semantic_02",
+      "question": "What is the difference between RAGAS and traditional RAG evaluation?",
+      "expected": "RAGAS is an automated evaluation framework that measures faithfulness, answer relevance, and context precision/recall, whereas traditional evaluation often relies on manual human assessment",
+      "actual": "RAGAS appears to evaluate three aspects using a separate evaluator LLM, whereas traditional RAG evaluation focuses on noise robustness, negative rejection, information integration, counterfactual robustness, faithfulness, accuracy, hit rate, MRR, NDCG.",
+      "difficulty": "medium",
+      "failure_mode": "semantic_confusion",
+      "sources_retrieved": 3,
+      "top_source_score": 0.5696561784998462,
+      "rewritten_query": null
+    }
+  ]
+}

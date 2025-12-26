@@ -1,38 +1,123 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# ============================================================================
+# RAG Evaluation Lab - .gitignore
+# ============================================================================
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-.env
+# ============================================================================
+# DATA FILES (Large/Binary)
+# ============================================================================
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# PDFs - downloaded via script
+data/raw/*.pdf
+data/raw/**/*.pdf
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Processed data - indexes, embeddings
+data/processed/
+*.index
+*.pkl
+*.pickle
 
-### VS Code ###
+# Vector database storage
+*.qdrant
+qdrant_storage/
+chroma_db/
+
+# ============================================================================
+# CACHE & TEMPORARY FILES
+# ============================================================================
+
+# Response cache
+cache/
+*.cache
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
 .vscode/
+*.code-workspace
+
+# ============================================================================
+# ENVIRONMENT & SECRETS
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API keys and secrets
+secrets.json
+api_keys.txt
+
+# ============================================================================
+# SYSTEM FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# ============================================================================
+# LOGS & OUTPUTS
+# ============================================================================
+
+# Logs
+logs/
+*.log
+
+# Test outputs
+test_outputs/
+debug/
+
+# ============================================================================
+# KEEP CERTAIN FILES
+# ============================================================================
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!cache/.gitkeep
+!results/.gitkeep
+
+# Keep result JSONs (these are lightweight and important for reproducibility)
+!results/*.json
+!results/**/*.json
+
+# Keep charts and visualizations
+!results/**/*.png
+!results/**/*.html

@@ -1,0 +1,61 @@
+{
+  "system_name": "structured_prompting",
+  "timestamp": "2025-12-10T22:25:28.709696",
+  "questions": [
+    {
+      "question_id": "easy_01",
+      "question": "What does RAG stand for?",
+      "expected": "Retrieval-Augmented Generation",
+      "actual": "To rewrite a search query as specified in the prompt.\n\nSearch Query: \"RAG abbreviation definition formal documentation\"\n\n\nRewritten Search Query:\n\n\"[Search(query)]\" (shown in gray italic)\n\n\nExplanation:\nAccording to the prompt, when an LLM generates \"[Search(query)]\", we stop the generation and use the query terms to retrieve relevant documents. The rewritten search query is then prepended before the user input to aid future generation until the next search query is generated or reaches the end.\n\nSource: Page 20 of \"active_RAG.pdf\"",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 10,
+      "top_source_score": 0.5590105740923715,
+      "rewritten_query": "Rewritten search query:\n\"RAG abbreviation definition formal documentation\""
+    },
+    {
+      "question_id": "easy_02",
+      "question": "What is the main purpose of RAG systems?",
+      "expected": "To augment LLM responses with retrieved external knowledge to improve accuracy and reduce hallucinations",
+      "actual": "Based on the provided context, I will provide a comprehensive report on the community of RAG (Regulatory Action Group) systems.\n\n**Report Title:** Regulatory Action Group Systems: A Comprehensive Review\n\n**Summary:**\n\nRAG systems are designed to support regulatory compliance management by providing a structured approach to identify, assess, and mitigate risks. The primary function of RAG systems is to facilitate the review of regulatory requirements and ensure that organizations comply with relevant laws and regulations. This report provides an overview of the key entities, legal compliance, technical capabilities, reputation, and noteworthy claims related to RAG systems.\n\n**Key Entities:**\n\n1. Regulatory Action Group (RAG) Systems\n2. Compliance Management\n3. Risk-Based Regulatory Compliance\n\n**Legal Compliance:**\n\nRAG systems are designed to support regulatory compliance management by providing a structured approach to identify, assess, and mitigate risks. The primary function of RAG systems is to facilitate the review of regulatory requirements and ensure that organizations comply with relevant laws and regulations.\n\n**Technical Capabilities:**\n\n1. Retrieval-Augmented Generation (RAG)\n2. Text-to-SQL and Code-based Semantic Parsing\n3. Natural Language Processing (NLP) and Machine Learning (ML)\n\n**Reputation:**\n\nRAG systems have gained significant attention in recent years due to their potential to improve regulatory compliance management. The reputation of RAG systems is built on their ability to provide a structured approach to identify, assess, and mitigate risks.\n\n**Noteworthy Claims:**\n\n1. RAG systems can improve the accuracy of regulatory compliance assessments by up to 30%.\n2. RAG systems can reduce the time required for regulatory compliance management by up to 50%.\n3. RAG systems can help organizations avoid non-compliance penalties by identifying potential risks and mitigating them early.\n\n**Impact Severity Rating:** 8/10\n\nThe impact severity rating is high due to the significant potential of RAG systems to improve regulatory compliance management. However, there are still limitations to be addressed, such as the need for further research on robustness and hybrid approaches.\n\n**Rating Explanation:**\n\nThe impact severity rating is high because RAG systems have the potential to significantly improve regulatory compliance management, reducing the risk of non-compliance penalties and improving the accuracy of assessments.\n\n**Detailed Findings:**\n\n1. **RAG Systems Can Improve Regulatory Compliance Management:** A study published in [document 1] found that RAG systems can improve the accuracy of regulatory compliance assessments by up to 30%.\n2. **RAG Systems Can Reduce Time Requirements:** A study published in [document 2] found that RAG systems can reduce the time required for regulatory compliance management by up to 50%.\n3. **RAG Systems Can Help Organizations Avoid Non-Compliance Penalties:** A study published in [document 3] found that RAG systems can help organizations avoid non-compliance penalties by identifying potential risks and mitigating them early.\n4. **Limitations of RAG Systems:** Further research is needed to address the limitations of RAG systems, such as robustness and hybrid approaches.\n\n**Findings Summary:**\n\nRAG systems have significant potential to improve regulatory compliance management. However, further research is needed to address the limitations of RAG systems.",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 10,
+      "top_source_score": 0.43951209502200883,
+      "rewritten_query": "Formal Search Query:\n\"Purpose of Regulatory Action Group (RAG) systems in compliance management\"\n\nOr, if you want to include specific information:\n\n\"Primary function of RAG systems in risk-based regulatory compliance\""
+    },
+    {
+      "question_id": "easy_03",
+      "question": "What are the main components of a RAG system?",
+      "expected": "A retriever (to find relevant documents) and a generator (LLM to produce answers using retrieved context)",
+      "actual": "The RAG system consists of two core modules: the retriever and the generator.\n\nSource: Section II.A. Overview, from the document titled \"survey_RAG_AiGenerated_content.pdf\"",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 10,
+      "top_source_score": 0.6202596295816408,
+      "rewritten_query": "\"RAG System Components Documentation\""
+    },
+    {
+      "question_id": "semantic_01",
+      "question": "How does Self-RAG differ from standard RAG?",
+      "expected": "Self-RAG adds reflection tokens that let the model decide when to retrieve, what to retrieve, and whether retrieved content is useful, making it more autonomous than standard RAG",
+      "actual": "Based on the provided context, I was unable to find a direct comparison between Self-RAG and Standard RAG. However, according to Section 3 of the document \"self-RAG_paper.pdf\", it is stated that Self-RAG outperforms LLMs with more parameters or with conventional retrieval-augmented generation approaches.\n\nAdditionally, in section 4.1 of the same document, it mentions that Self-RAG tailors an LM with no additional training, whereas conventional approaches like RAG require instruction-tuning using human or LLM annotated data to learn to output special critic tokens as needed.\n\nIt is also mentioned in Section 3.2 of \"ARES_automate_framework_for_rag_eval.pdf\" that Self-CRAG outperforms Self-RAG by margins of 20.0% accuracy on PopQA, 36.9% FactScore on Biography, and 4.0% accuracy on Arc-Challenge when based on LLaMA2-hf-7b.\n\nHowever, I couldn't find a direct comparison between Self-RAG and Standard RAG in terms of differences or specific metrics.",
+      "difficulty": "medium",
+      "failure_mode": "semantic_confusion",
+      "sources_retrieved": 10,
+      "top_source_score": 0.5147218337831195,
+      "rewritten_query": "\"Self-RAG vs Standard RAG - differences\" or \"RAG variants comparison\""
+    },
+    {
+      "question_id": "semantic_02",
+      "question": "What is the difference between RAGAS and traditional RAG evaluation?",
+      "expected": "RAGAS is an automated evaluation framework that measures faithfulness, answer relevance, and context precision/recall, whereas traditional evaluation often relies on manual human assessment",
+      "actual": "According to Table III in Section IV of the provided context (Section 4.6), there is no mention of \"RAGAS\" in the table, which lists various evaluation metrics for RAG models. However, it does list a range of traditional evaluation metrics applicable to RAG.\n\nUnfortunately, I don't have enough information to provide a specific answer to your question about differences between RAGAS and Traditional RAG evaluation methods, as there is no evidence that \"RAGAS\" was mentioned or studied in the provided context.\n\nIf you'd like me to try and investigate further, I can suggest some possible avenues of research:\n\n1. Searching for references to \"RAGAS\" in academic papers or online resources related to the field of RAG.\n2. Analyzing the provided text for any hints about how RAGAS might differ from traditional RAG evaluation methods.\n3. Consulting additional resources (e.g., academic papers, technical reports) that may provide more information on this topic.\n\nHowever, without further evidence, it's difficult to say anything definitively about the relationship between RAGAS and Traditional RAG Evaluation Methods.",
+      "difficulty": "medium",
+      "failure_mode": "semantic_confusion",
+      "sources_retrieved": 10,
+      "top_source_score": 0.5822393665947488,
+      "rewritten_query": "\"RAGAS vs Traditional RAG Evaluation: Differences\""
+    }
+  ]
+}

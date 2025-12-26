@@ -1,0 +1,61 @@
+{
+  "system_name": "improved_retrieval",
+  "timestamp": "2025-12-10T22:22:20.429072",
+  "questions": [
+    {
+      "question_id": "easy_01",
+      "question": "What does RAG stand for?",
+      "expected": "Retrieval-Augmented Generation",
+      "actual": "Based on the context information provided in the document, it appears that RAG stands for Regulatory Adjudication Group. \n\nDefinition of RAG:\nThe Regulatory Adjudication Group (RAG) is a system where a user query is used to retrieve relevant information from external data sources, which are then incorporated into the generation of a response by an LLM or other generative AI model.\n\nAcronym of RAG:\nThe acronym RAG generally refers to any system that involves retrieval and generation of information based on a user query.",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 10,
+      "top_source_score": 0.47447971935607686,
+      "rewritten_query": "\"RAG Acronym\" or \"RAG Definition\" could be used. However, without knowing the context of \"RAG\", it would be hard to give an exact answer.\n\nIf you meant \"RAG\" in a specific field like gene regulation and attenuation of gene expression, then the search query would be:\n\n\"RAG gene function\"\n\nIf you are referring to \"RAG\" as a general term for Regulatory Adjudication Group, then the search query would be:\n\n\"Regulatory Adjudication Group (RAG) definition\""
+    },
+    {
+      "question_id": "easy_02",
+      "question": "What is the main purpose of RAG systems?",
+      "expected": "To augment LLM responses with retrieved external knowledge to improve accuracy and reduce hallucinations",
+      "actual": "\"RAG system primary purpose formal documentation\"",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 10,
+      "top_source_score": 0.5961158498405102,
+      "rewritten_query": "The rewritten search query would be:\n\n\"RAG system primary purpose formal documentation\""
+    },
+    {
+      "question_id": "easy_03",
+      "question": "What are the main components of a RAG system?",
+      "expected": "A retriever (to find relevant documents) and a generator (LLM to produce answers using retrieved context)",
+      "actual": "{ \n  \"title\": \"Risk Assessment and Governance (RAG) components\",\n  \"summary\": \"A comprehensive list of RAG components is not provided in the given context, however, a general overview can be derived from various sources. The Risk Assessment and Governance (RAG) framework typically consists of multiple components that work together to identify, assess, and mitigate risks. These components may include: Risk Identification, Risk Assessment, Risk Prioritization, Risk Mitigation, Governance, Compliance, and Monitoring.\",\n  \"rating\": null,\n  \"rating explanation\": null,\n  \"findings\": [\n    {\n      \"summary\": \"Components of RAG systems\",\n      \"explanation\": \"The components of RAG systems may include: \n        * Risk Identification: Identifying potential risks that could impact the organization.\n        * Risk Assessment: Evaluating the likelihood and potential impact of identified risks.\n        * Risk Prioritization: Determining which risks to address first based on their level of risk and urgency.\n        * Risk Mitigation: Implementing controls or measures to reduce the likelihood or impact of identified risks.\n        * Governance: Establishing policies, procedures, and structures to oversee and manage RAG activities.\n        * Compliance: Ensuring that RAG activities are conducted in accordance with relevant laws, regulations, and industry standards.\n        * Monitoring: Continuously monitoring and reviewing RAG activities to ensure their effectiveness and identify areas for improvement.\n      \"grounding\": \"This information is based on general knowledge of RAG systems and may not be specific to the provided context. For more accurate information, please consult relevant regulatory frameworks or standards.\"\n    }\n  ]\n}",
+      "difficulty": "easy",
+      "failure_mode": null,
+      "sources_retrieved": 10,
+      "top_source_score": 0.4136453352684958,
+      "rewritten_query": "\"Components of Risk Assessment and Governance (RAG) systems according to [specific regulatory framework or standard]\"."
+    },
+    {
+      "question_id": "semantic_01",
+      "question": "How does Self-RAG differ from standard RAG?",
+      "expected": "Self-RAG adds reflection tokens that let the model decide when to retrieve, what to retrieve, and whether retrieved content is useful, making it more autonomous than standard RAG",
+      "actual": "The original Self-RAG model learns to retrieve, generate, and critique through self-reflection by using a public and accessible commercial web search API to generate URL links for every query, navigating the web pages, transcribing their content, and employing the same knowledge refinement method as before. This is in contrast to standard RAG approaches that rely solely on static knowledge corpora, which can lead to sub-optimal results.",
+      "difficulty": "medium",
+      "failure_mode": "semantic_confusion",
+      "sources_retrieved": 10,
+      "top_source_score": 0.6008618437308526,
+      "rewritten_query": "Rewritten search query:\n\"Self-RAG vs Standard RAG differences formal documentation\""
+    },
+    {
+      "question_id": "semantic_02",
+      "question": "What is the difference between RAGAS and traditional RAG evaluation?",
+      "expected": "RAGAS is an automated evaluation framework that measures faithfulness, answer relevance, and context precision/recall, whereas traditional evaluation often relies on manual human assessment",
+      "actual": "The differences between RAGAS and traditional RAG evaluation methods include:\n\nRAGAS (Automated Assessment Framework) provides a more comprehensive and systematic approach to evaluating RAG systems, whereas traditional RAG evaluations mainly focus on measuring perplexity on reference corpora or using question-answering datasets with short extractive answers. \n\nRAGAS evaluates RAG performance across multiple evaluation tasks, including downstream tasks and generation tasks, which is not typically covered in traditional RAG evaluations.\n\nMoreover, RAGAS utilizes a more diverse range of benchmarks and tools to assess RAG models, whereas traditional RAG evaluations are often limited to specific datasets or benchmarks. \n\nRAGAS offers greater flexibility and adaptability across different LLM generators and tasks compared to traditional RAG methods.",
+      "difficulty": "medium",
+      "failure_mode": "semantic_confusion",
+      "sources_retrieved": 10,
+      "top_source_score": 0.581519048838908,
+      "rewritten_query": "\"RAGAS vs Traditional RAG Evaluation Differences\""
+    }
+  ]
+}
